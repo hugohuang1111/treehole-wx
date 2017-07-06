@@ -1,0 +1,84 @@
+/**index.wxss**/
+
+page {
+  height: 100%;
+}
+
+.logo {
+  margin: 20rpx;
+  color: red;
+}
+
+.container {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.containerItem {
+  flex: 0 0 auto;
+}
+
+.containerWords {
+  flex: 1 0 auto;
+}
+
+.wordView {
+  margin: 60rpx;
+}
+.nickName {
+  color: #A0A0A0;
+}
+.word {
+  color: darkgreen;
+}
+
+.editArea {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.editAreaInput {
+  width: 550rpx;
+  height: 50rpx;
+  background-color: #EEEEEE;
+  margin: 10rpx 10rpx;
+}
+
+.editAreaBtn {
+  size: mini;
+  background-color: green;
+  color: white;
+  margin: 10rpx 10rpx;
+}
+
+.toastBoard {
+  position: absolute;
+  bottom: 100rpx;
+  width: 300rpx;
+  height: 60rpx;
+  background-color: #333333;
+  opacity: 0.8;
+  border-radius: 10rpx;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.toast {
+  color: white;
+  align-items: center;
+}
+
+.hide {
+  display: none;
+}

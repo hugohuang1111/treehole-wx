@@ -1,0 +1,26 @@
+<!--index.wxml-->
+<view class="container">
+
+  <template name="toast">
+    <view class="{{null == txt || 0 == txt.length ? 'hide' : 'toastBoard'}}">
+      <text class="toast">{{txt}}</text>
+    </view>
+  </template>
+
+  <view class="logo containerItem">
+    <text bindtap="onTitle"> 树洞 </text>
+  </view>
+  <view class="containerWords">
+    <view wx:for="{{words}}" class="wordView">
+      <text class="nickName">{{item.nickName}}</text>
+      <text> : </text>
+      <text class="word">{{item.word}}</text>
+    </view>
+  </view>
+  <view class="containerItem editArea">
+    <input class="editAreaInput" type="text" placeholder="说点什么呢" bindconfirm="onConfirm" />
+    <button class="editAreaBtn" bindtap="onConfirm">Send</button>
+  </view>
+
+  <template is="toast" data="{{txt: toast}}"></template>
+</view>
